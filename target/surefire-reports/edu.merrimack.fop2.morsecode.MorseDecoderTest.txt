@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: edu.merrimack.fop2.morsecode.MorseDecoderTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec <<< FAILURE!
+edu.merrimack.fop2.morsecode.MorseDecoderTest.testDetermineLetter()  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:48)
+	at java.base/java.lang.String.charAt(String.java:1512)
+	at edu.merrimack.fop2.morsecode.MorseDecoder.decodeLetter(MorseDecoder.java:43)
+	at edu.merrimack.fop2.morsecode.MorseDecoder.decodeLetter(MorseDecoder.java:71)
+	at edu.merrimack.fop2.morsecode.MorseDecoder.decodeLetter(MorseDecoder.java:71)
+	at edu.merrimack.fop2.morsecode.MorseDecoder.decodeLetter(MorseDecoder.java:21)
+	at edu.merrimack.fop2.morsecode.MorseDecoderTest.testDetermineLetter(MorseDecoderTest.java:67)
+
+edu.merrimack.fop2.morsecode.MorseDecoderTest.testDeterminePhrase()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:48)
+	at java.base/java.lang.String.charAt(String.java:1512)
+	at edu.merrimack.fop2.morsecode.MorseDecoder.decodeLetter(MorseDecoder.java:43)
+	at edu.merrimack.fop2.morsecode.MorseDecoder.decodeLetter(MorseDecoder.java:53)
+	at edu.merrimack.fop2.morsecode.MorseDecoder.decodeLetter(MorseDecoder.java:53)
+	at edu.merrimack.fop2.morsecode.MorseDecoder.decodeLetter(MorseDecoder.java:53)
+	at edu.merrimack.fop2.morsecode.MorseDecoder.decodeLetter(MorseDecoder.java:21)
+	at edu.merrimack.fop2.morsecode.MorseDecoder.decodePhrase(MorseDecoder.java:105)
+	at edu.merrimack.fop2.morsecode.MorseDecoderTest.testDeterminePhrase(MorseDecoderTest.java:58)
+
+edu.merrimack.fop2.morsecode.MorseDecoderTest.testCustomAlphabet()  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:48)
+	at java.base/java.lang.String.charAt(String.java:1512)
+	at edu.merrimack.fop2.morsecode.MorseDecoder.decodeLetter(MorseDecoder.java:43)
+	at edu.merrimack.fop2.morsecode.MorseDecoder.decodeLetter(MorseDecoder.java:53)
+	at edu.merrimack.fop2.morsecode.MorseDecoder.decodeLetter(MorseDecoder.java:21)
+	at edu.merrimack.fop2.morsecode.MorseDecoder.decodePhrase(MorseDecoder.java:105)
+	at edu.merrimack.fop2.morsecode.MorseDecoderTest.testCustomAlphabet(MorseDecoderTest.java:25)
+
